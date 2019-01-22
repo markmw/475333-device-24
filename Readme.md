@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Адилет Байтурынов](https://up.htmlacademy.ru/htmlcss/24/user/475333).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
