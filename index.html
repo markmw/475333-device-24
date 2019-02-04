@@ -8,7 +8,17 @@
     <header class="main-header">
         <div class="user-navigation">
           <a class="main-header-logo" href="index.html">DEVICE</a>
-          <span>Поиск по сайту</span>
+        <section class="search">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="search-item">
+              <label for="search-name"></label>
+              <input id="search-name" type="text" name="text" value="" placeholder="Поиск по сайту" required>
+            </p>
+            <button class="button" type="submit" aria-label="Отправить форму поиска">
+              <img src="img/search.svg" width="16" height="16" alt="Иконка поиска">
+            </button>
+          </form>
+        </section>
           <ul class="user-doing">
             <li class="login-link">
               <a href="login.html">
@@ -69,24 +79,6 @@
           </a>
             <br><!--br временно, не обращайте внимания))-->
           <a class="button" href="writeToUs.html">Напишите нам</a>
-          <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-            <button class="close-form" type="button" aria-label="Закрыть форму письма">
-              Закрыть
-            </button>
-            <p class="write-us-item">
-              <label for="write-us-name">Ваше имя:</label>
-              <input id="write-us-name" type="text" name="name" value="" placeholder="Имя Фамилия" required>
-            </p>
-            <p class="write-us-item">
-              <label for="write-us-email">Ваш e-mail:</label>
-              <input id="write-us-email" type="email" name="email" value="" placeholder="email@expample.com" required>
-            </p>
-            <p class="write-us-item">
-              <label for="write-us-text">Текст письма:</label>
-              <input id="write-us-text" type="text" name="text" value="" placeholder="В свободной форме" required>
-            </p>
-            <button class="button" type="submit" aria-label="Отправить форму письма">Отправить</button>
-          </form>
         </section>
     </main>
     <footer class="main-footer">
@@ -126,5 +118,30 @@
         </p>
         </div>
     </footer>
+    <section class="writeus-popup">
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <button class="close-form" type="button" aria-label="Закрыть форму письма">
+        X
+      </button>
+      <p class="write-us-item">
+        <label for="write-us-name">Ваше имя:</label>
+        <input id="write-us-name" type="text" name="name" value="" placeholder="Имя Фамилия" required>
+      </p>
+      <p class="write-us-item">
+        <label for="write-us-email">Ваш e-mail:</label>
+        <input id="write-us-email" type="email" name="email" value="" placeholder="email@expample.com" required>
+      </p>
+      <p class="write-us-item">
+        <label for="write-us-text">Текст письма:</label>
+        <input id="write-us-text" type="text" name="text" value="" placeholder="В свободной форме" required>
+      </p>
+      <button class="button" type="submit" aria-label="Отправить форму письма">Отправить</button>
+    </form>
+  </section>
+    <section class="map-popup">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2194.1617341360416!2d47.83485031624517!3d56.637085180799104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4159eb684547a797%3A0x85080d0fa94ebbe!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQmdC-0YjQutCw0YAt0J7Qu9CwLCDQoNC10YHQvy4g0JzQsNGA0LjQuSDQrdC7LCDQoNC-0YHRgdC40Y8sIDQyNDAyOA!5e0!3m2!1sru!2skz!4v1549306337879" width="960" height="559" frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
+      <button class="button" type="button" aria-label="Закрыть карту">X</button>
+    </section>
   </body>
 </html>
