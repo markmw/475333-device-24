@@ -1,0 +1,119 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-ExtraBold.woff2);
+  font-weight: ExtraBold;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+.user-navigation {
+  font-size: 15px;
+  line-height: 30px;
+}
+.main-navigation {
+  font-size: 18px;
+  line-height: 24px;
+}
+.main-header {
+  background-color: #f8e296;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.site-navigation,
+.catalog-popap,
+.user-doing,
+.compare-basket {
+  list-style: none;
+}
+.main-header a,
+.about-us a,
+.contacts a {
+  color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  opacity: 0.6;
+}
+.about-us ul {
+  list-style-type: circle;
+}
+.about-us h2,
+.contacts h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+.about-us ul {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #f0c52e;
+}
+.main-footer {
+  background-color: #464646;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.main-footer-logo {
+  color: #f0c52e;
+}
+.footer-top a,
+.footer-mid a,
+.footer-mid p {
+  color: #ffffff;
+}
+.footer-top a:hover,
+.footer-top a:focus,
+.footer-mid a:hover,
+.footer-mid a:focus {
+  opacity: 0.3;
+}
+.page-title h1 {
+  font-family: "Gilroy", Arial, sans-serif;
+  width: 1440px;
+  height: 2015px;
+}
+.breadcrumbs a {
+  color: #000000;
+  opacity: 0.3;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  opacity: 0.6;
+}
+.filter legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.filter-input-checkbox {
+  width: 27px;
+  height: 23px;
+  opacity: 0.6;
+}
+.writeus-popup,
+.map-popup {
+  display: none;
+}
