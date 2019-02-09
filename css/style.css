@@ -1,42 +1,71 @@
 @font-face {
   font-family: Gilroy;
-  src: url(../fonts/Gilroy-ExtraBold.woff2);
-  font-weight: ExtraBold;
+  src: url(../fonts/Gilroy-ExtraBold.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy-light;
+  src: url(../fonts/Gilroy-Light.woff);
+  font-weight: normal;
   font-style: normal;
 }
 body {
   margin: 0;
   padding: 0;
-
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
-  color: #464646;
-  text-transform: uppercase;
-
-  background-color: #ffffff;
 }
-a {
-  text-decoration: none;
+.main-header-logo:hover {
+  opacity: 0.6;
 }
-.user-navigation {
-  font-size: 15px;
-  line-height: 30px;
-}
-.main-navigation {
-  font-size: 18px;
-  line-height: 24px;
+.main-header-logo:focus,
+.main-header-logo:active {
+  opacity: 0.3;
 }
 .main-header {
   background-color: #f8e296;
-  background-position: top center;
-  background-repeat: no-repeat;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.search-item .button {
+  border: 2px solid #000000;
+  background-color: #f8e296;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+.search-item .button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.search-item .button:focus,
+.search-item .button:active {
+  color: #4c4c4c;
+}
+#search-name {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300px;
+  line-height: 30px;
+  background-color: #f8e296;
+  border: 0;
+  opacity: 0.3;
+  color: #000000;
+}
+#search-name:hover {
+  opacity: 0.6;
+}
+#search-name:focus {
+  opacity: 1;
 }
 .site-navigation,
 .catalog-popap,
 .user-doing,
 .compare-basket {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .main-header a,
@@ -44,76 +73,381 @@ a {
 .contacts a {
   color: #000000;
 }
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.main-header a:hover,
+.about-us a:hover,
+.contacts a:hover {
   opacity: 0.6;
+}
+.main-header a:focus,
+.about-us a:focus,
+.contacts a:focus,
+.main-header a:active,
+.about-us a:active,
+.contacts a:active {
+  opacity: 0.3;
+}
+a {
+  text-decoration: none;
+}
+.site-navigation a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.catalog-popap a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+  text-transform: capitalize;
+}
+.container .visually-hidden,
+.writeus-popup,
+.map-popup {
+  display: none;
+}
+.container {
+  background-color: #ffffff;
+}
+.container p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #464646;
+}
+.container h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.about-us a,
+.contacts a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.about-us a:hover,
+.contacts a:hover {
+  opacity: 1;
+  background-color: #f0c52e;
+}
+.about-us a:focus,
+.contacts a:focus,
+.about-us a:active,
+.contacts a:active {
+  color: #a88a20;
 }
 .about-us ul {
   list-style-type: circle;
 }
-.about-us h2,
-.contacts h2 {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 47px;
-  line-height: 48px;
-  text-transform: capitalize;
-}
-.about-us ul {
+.about-us li {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 40px;
 }
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: #f0c52e;
+.main-footer-logo:hover {
+  opacity: 0.6;
+}
+.main-footer-logo:focus,
+.main-footer-logo:active {
+  opacity: 0.3;
 }
 .main-footer {
   background-color: #464646;
-  background-position: top center;
-  background-repeat: no-repeat;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
 }
-.main-footer-logo {
-  color: #f0c52e;
-}
-.footer-top a,
-.footer-mid a,
-.footer-mid p {
+.footer-top a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+  opacity: 0.7;
   color: #ffffff;
 }
-.footer-top a:hover,
+.footer-top a:hover {
+  opacity: 1;
+}
 .footer-top a:focus,
-.footer-mid a:hover,
-.footer-mid a:focus {
+.footer-top a:active {
   opacity: 0.3;
 }
-.page-title h1 {
-  font-family: "Gilroy", Arial, sans-serif;
-  width: 1440px;
-  height: 2015px;
+.footer-mid p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
 }
-.breadcrumbs a {
-  color: #000000;
-  opacity: 0.3;
-}
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
-  opacity: 0.6;
-}
-.filter legend {
+.footer-mid a {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 24px;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  color: #ffffff;
 }
-.filter-input-checkbox {
-  width: 27px;
-  height: 23px;
+.footer-mid a:hover {
   opacity: 0.6;
 }
-.writeus-popup,
-.map-popup {
+.footer-mid a:focus,
+.footer-mid a:active {
+  opacity: 0.3;
+}
+.footer-bottom ul {
+  list-style: none;
+}
+.footer-bottom a {
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.footer-bottom a:hover {
+  opacity: 0.6;
+}
+.footer-bottom a:focus,
+.footer-bottom a:active {
+  opacity: 0.1;
+}
+.footer-copyright a {
+  width: 27px;
+  height: 35px;
+  opacity: 1;
+}
+.footer-copyright a:hover {
+  opacity: 0.6;
+}
+.footer-copyright a:focus,
+.footer-copyright a:active {
+  opacity: 0.3;
+}
+.page-title {
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.breadcrumbs li {
+  list-style-type: none;
+}
+.breadcrumbs a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  opacity: 0.3;
+  color: #000000;
+}
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+}
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+.filters .visually-hidden {
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #dbdbdb;
+}
+.filters .sorting {
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #ebebeb;
+}
+.filters legend {
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.filter fieldset {
+  border: 0;
+}
+.filter li {
+  list-style-type: none;
+}
+.filters ul {
+  margin: 0;
+  padding: 0;
+}
+.filter-option {
+  margin: inherit;
+  padding: inherit;
+}
+.filter-option label {
+  color: #000000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+}
+.filter-input-checkbox:hover,
+.filter-input-radio:hover {
+  opacity: 0.6;
+}
+.filter-input-checkbox:focus,
+.filter-input-radio:focus,
+.filter-input-checkbox:active,
+.filter-input-radio:active {
+  opacity: 1;
+}
+.filter {
+  color: #000000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  text-transform: capitalize;
+  background-color: #efefef;
+}
+.filter button {
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #efefef;
+}
+.filter button:hover {
+  background-color: #f0c52e;
+}
+.filter button:focus,
+.filter button:active {
+  color: #a88a20;
+}
+.sorting-main {
+  background-color: #ebebeb;
+}
+.sorting-main a {
+  color: #000000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 0.3;
+}
+.sorting-main a:hover {
+  opacity: 0.6;
+}
+.sorting-main a:focus,
+.sorting-main a:active {
+  opacity: 1;
+}
+.catalog .visually-hidden {
   display: none;
+}
+.catalog li {
+  list-style-type: none;
+}
+.catalog ul {
+    margin: 0;
+    padding: 0;
+}
+.catalog-item,
+.catalog-item a {
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.catalog-item b {
+  color: #464646;
+  font-family: "Gilroy-light", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.catalog-list .button {
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.catalog-list .button:hover {
+  background-color: #f0c52e;
+}
+.catalog-list .button:focus,
+.catalog-list .button:active {
+  color: #a88a20;
+}
+.catalog-item #comparing {
+  opacity: 0.5;
+  color: #000000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  border: 0;
+  background-color: #ffffff;
+}
+.catalog-item #comparing:hover {
+  opacity: 1;
+}
+.catalog-item #comparing:focus,
+.catalog-item #comparing:active{
+  opacity: 0.3;
+}
+.previous-next {
+  background-color: #ebebeb;
+}
+.previous-next a {
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight:  400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.previous-next-item a {
+  opacity: 0.3;
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+#one {
+  opacity: 1;
+}
+.previous-next a:hover {
+  background-color: #d8d8d8;
+}
+.previous-next a:focus,
+.previous-next a:active {
+  background-color: #979797;
 }
