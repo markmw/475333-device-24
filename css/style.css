@@ -66,7 +66,8 @@ body {
 .site-navigation,
 .catalog-popap,
 .user-doing,
-.compare-basket {
+.compare
+.basket {        /*ЗДЕСЬ*/
   margin: 0;
   padding: 0;
   list-style: none;
@@ -453,4 +454,177 @@ a {
 .previous-next a:focus,
 .previous-next a:active {
   background-color: #979797;
+}
+
+
+/*Ниже сеточные стили*/
+html,
+body {
+  width: 1440px;
+  height: 2795px;
+}
+/*Ниже хедер*/
+.main-header {
+  width: 1160px;
+  margin-bottom: 1491px; /*ВРЕМЕННО для глаз*/
+  margin-top: 40px;
+  margin-left: 140px;
+  padding: 0;
+  min-height: 299px; /*высота временно*/
+  /*margin-right: 140px;*/
+}
+.main-header-logo {
+  position: absolute;
+  margin-top: -19px;
+  margin-left: -1px;
+  width: 163px;
+  height: 35px;
+}
+.user-navigation {
+  width: 1036px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.site-navigation {
+  width: 1039px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  /*background-color: #000000;*/
+}
+.user-wrapper {
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 0;
+  background-color: #f8e296;
+}
+.main-nav-wrapper {
+  width: 100%;
+  margin-bottom: 169px;
+  padding: 0;
+  background-color: #f8e296;
+}
+.user-container {
+  width: 1036px;
+  margin: 0 auto;
+  padding: 0;
+}
+.main-nav-container {
+  width: 1039px;
+  margin: 0 auto;
+  padding: 0;
+}
+.user-wrapper .user-container {
+  display: flex;
+}
+.main-nav-wrapper .main-nav-container {
+  display: flex;
+
+}
+.search-form .button {
+  position: absolute;
+  width: 85px;
+  min-height: 49px;
+  margin-left: 300px;
+  margin-top: -45px;
+}
+.search-form {
+  margin-top: 27px;
+  margin-left: 37px;
+  padding: 0;
+  width: 121px;
+  /*background-color: #000000;*/
+}
+.user-doing .login-link {
+  margin-top: -47px;
+  margin-left: 565px;
+  width: 200px;
+  padding: 0;
+  /*background-color: #000000;*/
+}
+.compare,
+.basket {
+  list-style-type: none;
+}
+.compare {
+  margin-top: -47px;
+  margin-left: 846px;
+  width: 100px;
+  padding: 0;
+  /*background-color: #000000;*/
+}
+.basket {
+  margin-top: -45px;
+  margin-left: 979px;
+  width: 100px;
+  padding: 0;
+  /*background-color: #000000;*/
+}
+.catalog-popap {
+  display: none;
+  letter-spacing: 0;
+}
+.catalog-main {
+  width: 246px;
+  margin-top: -28px;
+  letter-spacing: 3.6px;
+}
+.delivery {
+  width: 121px;
+  margin-top: -28px;
+  margin-left: 295px;
+  letter-spacing: 3.6px;
+}
+.garantee {
+  width: 109px;
+  margin-top: -28px;
+  margin-left: 36px;
+  letter-spacing: 3.6px;
+}
+.contacts-header {
+  width: 58px;
+  margin-top: -28px;
+  margin-left: 114px;
+  letter-spacing: 3.6px;
+}
+/*MAIN*/
+.main-about-contacts {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 140px;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 580px;
+  background-color: #f7f7f7;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 580px;
+  background-color: #f7f7f7;
+}
+.about-us p {
+  margin-top: 4px;
+  width: 462px;
+}
+/*FOOTER*/
+.main-footer {
+  margin-top: 93px;
+  width: 1440px;
+  height: 323px;
+}
+.main-footer-wrapper {
+  margin: 0 auto;
+  padding: 0;
 }
