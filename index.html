@@ -8,9 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <div class="user-wrapper">
-        <div class="user-container">
+    <header class="main-header container">
         <div class="user-navigation">
           <a class="main-header-logo" href="index.html">
             <img src="img/logo-device.svg" alt="DEVICE" width="163px" height="35px">
@@ -25,34 +23,14 @@
             </p>
           </form>
           <ul class="user-doing">
-            <li class="login-link">
-              <a href="login.html">
-                Войти
-              </a>
-            </li>
-          </ul>
-          <ul class="compare">
-            <li class="сompare-list">
-              <a href="compare.html">
-                Сравнить
-              </a>
-            </li>
-          </ul>
-          <ul class="basket">
-            <li class="basket-list">
-              <a href="basket.html">
-                Корзина
-              </a>
-            </li>
+            <li class="login-link"><a href="login.html">Войти</a></li>
+            <li class="сompare-list"><a href="compare.html">Сравнить</a></li>
+            <li class="basket"><a href="basket.html">Корзина</a></li>
           </ul>
         </div>
-        </div>
-      </div>
       <nav class="main-navigation">
-        <div class="main-nav-wrapper">
-          <div class="main-nav-container">
         <ul class="site-navigation">
-          <li  class="catalog-main" >
+          <li class="catalog-main">
             <a href="catalog.html">Каталог товаров</a>
               <ul  class="catalog-popap">
                   <li><a href="virtual.html">Виртуальная реальность</a></li>
@@ -63,27 +41,21 @@
                   <li><a href="action-cam.html">Экшн-камеры</a></li>
               </ul>
           </li>
-          <li  class="delivery" ><a href="delivery.html">Доставка</a></li>
-          <li  class="garantee" ><a href="garantee.html">Гарантия</a></li>
-          <li  class="contacts-header" ><a href="contacts.html">Контакты</a></li>
+          <li class="delivery-box"><a href="delivery.html">Доставка</a></li>
+          <li class="garantee-box"><a href="garantee.html">Гарантия</a></li>
+          <li class="contacts-box"><a href="contacts.html">Контакты</a></li>
         </ul>
-      </div>
-      </div>
       </nav>
     </header>
-    <main class="container">
+    <main class="main-content">
         <h1 class="visually-hidden">
           Интернет-магазин гаджетов «DEVICE»
         </h1>
-        <div class="main-about-contacts">
+        <div class="info-on-us container">
         <section class="about-us">
           <h2>О нас</h2>
-          <p>
-            Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-          </p>
-          <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России!<br>DEVICE работает со многими транспортными компаниями:
-          </p>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul>
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
@@ -96,64 +68,56 @@
           <p  class="contacts-info">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
-          <a href="map.html">
-            <img src="img/map.jpg" width="560" height="220" alt="Карта">
-          </a>
+            <span class="maps"><img src="img/map.jpg" width="560" height="220" alt="Карта"></span>
           <a class="button" href="writeToUs.html">Напишите нам</a>
         </section>
-      </div>
+        </div>
     </main>
     <footer class="main-footer">
-      <div class="main-footer-wrapper">
-      <a class="main-footer-logo" href="index.html">
-        <img src="img/logo-footer.svg" alt="DEVICE" width="163px" height="35px">
-      </a>
+      <div class="container-foot">
       <div class="footer-top">
-      <ul class="user-doing">
-        <li class="login-link">
-          <a href="login.html">
-            Войти
-          </a>
-        </li>
-      </ul>
-      <ul class="compare-basket">
-        <li class="сompare-list"><a href="compare.html">Сравнить</a></li>
-        <li class="basket"><a href="basket.html">Корзина</a></li>
+        <a class="main-footer-logo" href="index.html">
+          <img src="img/logo-footer.svg" alt="DEVICE" width="163px" height="35px">
+        </a>
+      <ul class="footer-user-doing">
+        <li class="footer-login-link"><a class="color-foot" href="login.html">Войти</a></li>
+        <li class="footer-сompare-list"><a class="color-foot" href="compare.html">Сравнить</a></li>
+        <li class="footer-basket"><a class="color-foot" href="basket.html">Корзина</a></li>
       </ul>
       </div>
       <div class="footer-mid">
-        <p>г. Москва, ул. Строителей, 15</p>
-        <ul class="site-navigation">
+        <p class="adress">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer-site-navigation">
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="garantee.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <p>Тел: +7(495)495-95-95</p>
+        <p class="telefon">Тел: +7(495)495-95-95</p>
       </div>
         <div class="footer-bottom">
-          <ul>
+          <ul class="socials">
           <li>
-            <a class="social-button" href="#" aria-label="DEVICE на Фейсбуке">
+            <a class="facebook social-button" href="#" aria-label="DEVICE на Фейсбуке">
               <img src="img/fb.svg" alt="Facebook" width="32px" height="32px">
             </a>
           </li>
           <li>
-            <a class="social-button" href="#" aria-label="DEVICE в Инстаграмме">
+            <a class="instagram social-button" href="#" aria-label="DEVICE в Инстаграмме">
               <img src="img/instagram.svg" alt="Instagram" width="32px" height="32px">
             </a>
           </li>
           <li>
-            <a class="social-button" href="#" aria-label="DEVICE в Твиттере">
+            <a class="twitter social-button" href="#" aria-label="DEVICE в Твиттере">
               <img src="img/twitter.svg" alt="Twitter" width="32px" height="32px">
             </a>
           </li>
           </ul>
+
         <p class="footer-copyright">
           <a class="button" href="https://htmlacademy.ru" aria-label="Сайт разработчика">
             <img src="img/logo-html.svg">
           </a>
         </p>
-        </div>
       </div>
     </footer>
     <section class="writeus-popup">

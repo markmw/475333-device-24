@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
         <div class="user-navigation">
           <a class="main-header-logo" href="index.html">
             <img src="img/logo-device.svg" alt="DEVICE" width="163px" height="35px">
@@ -23,20 +23,14 @@
             </p>
           </form>
           <ul class="user-doing">
-            <li class="login-link">
-              <a href="login.html">
-                Войти
-              </a>
-            </li>
-          </ul>
-          <ul class="compare-basket">
+            <li class="login-link"><a href="login.html">Войти</a></li>
             <li class="сompare-list"><a href="compare.html">Сравнить</a></li>
             <li class="basket"><a href="basket.html">Корзина</a></li>
           </ul>
         </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li>
+          <li class="catalog-main">
             <a href="catalog.html">Каталог товаров</a>
               <ul  class="catalog-popap">
                   <li><a href="virtual.html">Виртуальная реальность</a></li>
@@ -47,20 +41,36 @@
                   <li><a href="action-cam.html">Экшн-камеры</a></li>
               </ul>
           </li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="garantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="delivery-box"><a href="delivery.html">Доставка</a></li>
+          <li class="garantee-box"><a href="garantee.html">Гарантия</a></li>
+          <li class="contacts-box"><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
-    <main class=""container>
+    <main class="main-content container-main">
       <h1 class="page-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
           <li><a href="catalog.html">Каталог товаров</a></li>
           <li><a>Моноподы для селфи</a></li>
         </ul>
+      <div class="main-about">
       <section class="filters">
+        <div class="filters-wrapper">
+        <div class="sorting-main">
+        <h2 class="sorting">Сортировка:</h2>
+        <ul class="sorting-type">
+          <li>
+            <a href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По популярности</a>
+          </li>
+        </ul>
+      </div>
         <h2>Фильтр:</h2> <!---->
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
@@ -109,23 +119,10 @@
             Показать
           </button>
         </form>
-        <div class="sorting-main">
-        <h2 class="sorting">Сортировка:</h2>
-        <ul class="sorting-type">
-          <li>
-            <a href="#">По цене</a>
-          </li>
-          <li>
-            <a href="#">По типу</a>
-          </li>
-          <li>
-            <a href="#">По популярности</a>
-          </li>
-        </ul>
       </div>
       </section>
       <section class="catalog">
-        <h2 class="visually-hidden">Моноподы для селфи</h2><!---->
+        <h2 class="visually-hiddenn">Моноподы для селфи</h2><!---->
         <ul class="catalog-list">
           <li class="catalog-item">
             <button class="button" type="submit" aria-label="Добавить в корзину">
@@ -139,7 +136,7 @@
               <a href="catalog-item.html">Любительская селфи-палка</a>
             </h3>
             <p class="catalog-item-image">
-              <img src="img/product-1.jpg" width="220" height="165" alt="Любительская селфи-палка">
+              <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
             </p>
             <b>500 руб.</b>
           </li>
@@ -154,7 +151,7 @@
               <a href="catalog-item.html">Профессиональная селфи-палка</a>
             </h3>
             <p class="catalog-item-image">
-              <img src="img/product-2.jpg" width="220" height="165" alt="Профессиональная селфи-палка">
+              <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             </p>
             <b>1500 руб.</b>
           </li>
@@ -169,7 +166,7 @@
               <a href="catalog-item.html">Непотопляемая селфи-палка</a>
             </h3>
             <p class="catalog-item-image">
-              <img src="img/product-3.jpg" width="220" height="165" alt="Непотопляемая селфи-палка">
+              <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             </p>
             <b>2500 руб.</b>
           </li>
@@ -184,7 +181,7 @@
               <a href="catalog-item.html">Селфи-палка «Следуй за мной»</a>
             </h3>
             <p class="catalog-item-image">
-              <img src="img/product-4.jpg" width="220" height="165" alt="Селфи-палка «Следуй за мной»">
+              <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
             </p>
             <b>4900 руб.</b>
           </li>
@@ -205,57 +202,54 @@
           <a href="#">вперед</a>
       </div>
       </section>
+  </div>
     </main>
     <footer class="main-footer">
-      <a class="main-footer-logo" href="index.html">
-        <img src="img/logo-footer.svg" alt="DEVICE" width="163px" height="35px">
-      </a>
+      <div class="container-foot">
       <div class="footer-top">
-      <ul class="user-doing">
-        <li class="login-link">
-          <a href="login.html">
-            Войти
-          </a>
-        </li>
-      </ul>
-      <ul class="compare-basket">
-        <li class="сompare-list"><a href="compare.html">Сравнить</a></li>
-        <li class="basket"><a href="basket.html">Корзина</a></li>
+        <a class="main-footer-logo" href="index.html">
+          <img src="img/logo-footer.svg" alt="DEVICE" width="163px" height="35px">
+        </a>
+      <ul class="footer-user-doing">
+        <li class="footer-login-link"><a class="color-foot" href="login.html">Войти</a></li>
+        <li class="footer-сompare-list"><a class="color-foot" href="compare.html">Сравнить</a></li>
+        <li class="footer-basket"><a class="color-foot" href="basket.html">Корзина</a></li>
       </ul>
       </div>
       <div class="footer-mid">
-        <p>г. Москва, ул. Строителей, 15</p>
-        <ul class="site-navigation">
+        <p class="adress">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer-site-navigation">
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="garantee.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <p>Тел: +7(495)495-95-95</p>
+        <p class="telefon">Тел: +7(495)495-95-95</p>
       </div>
         <div class="footer-bottom">
-          <ul>
+          <ul class="socials">
           <li>
-            <a class="social-button" href="#" aria-label="DEVICE на Фейсбуке">
+            <a class="facebook social-button" href="#" aria-label="DEVICE на Фейсбуке">
               <img src="img/fb.svg" alt="Facebook" width="32px" height="32px">
             </a>
           </li>
           <li>
-            <a class="social-button" href="#" aria-label="DEVICE в Инстаграмме">
+            <a class="instagram social-button" href="#" aria-label="DEVICE в Инстаграмме">
               <img src="img/instagram.svg" alt="Instagram" width="32px" height="32px">
             </a>
           </li>
           <li>
-            <a class="social-button" href="#" aria-label="DEVICE в Твиттере">
+            <a class="twitter social-button" href="#" aria-label="DEVICE в Твиттере">
               <img src="img/twitter.svg" alt="Twitter" width="32px" height="32px">
             </a>
           </li>
           </ul>
+
         <p class="footer-copyright">
           <a class="button" href="https://htmlacademy.ru" aria-label="Сайт разработчика">
             <img src="img/logo-html.svg">
           </a>
         </p>
-        </div>
+      </div>
     </footer>
   </body>
 </html>
